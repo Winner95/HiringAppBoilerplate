@@ -28,3 +28,13 @@ You will need to adjust boilerplate for yourself:
 
     - data manipulation scenarios
     - route_deliver > $ajax.url -  backend url. Should lead to backend instance, which will handle post-request.
+
+## What's next
+
+You can edit and run this project locally:
+
+**clone repository**
+**npm install**
+**npm start**
+
+You can upload your code to AWS servers and run it remotely.
