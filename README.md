@@ -33,8 +33,10 @@ You will need to adjust boilerplate for yourself:
 
 You can edit and run this project locally:
 
-**clone repository**
-**npm install**
-**npm start**
+    - clone repository
+
+    - npm install
+
+    - npm start
 
 You can upload your code to AWS servers and run it remotely.
