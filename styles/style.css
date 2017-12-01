@@ -1,0 +1,83 @@
+html {
+    background-color: #7000e2;
+}
+
+body {
+    background-color: #fff;
+}
+
+body .col {
+    flex-basis: auto;
+}
+
+main {
+    min-height: calc( 100vh - 52px - 70px);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.extra-margins {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* custom styles */
+.navbar {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 0 0 2px 2px;
+    box-shadow: none;
+}
+
+.navbar--primary {
+      background-color: #7000e2;
+}
+
+footer.footer--primary {
+      background-color: #7000e2;
+}
+
+.intro + .footer--primary {
+    margin-top: 0;
+}
+
+.row--vacansies .col {
+    padding-bottom: 30px;
+}
+
+.list--duties {
+    text-align: left;
+}
+
+.title--primary {
+      color: #7000e2;
+}
+
+.btn--primary {
+      background-color: #7000e2;
+}
+
+.md-form label {
+    width: calc(100% - 3rem);
+}
+
+.modal-progress {
+    transition: transform 200ms linear;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.modal-progress.is-active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.is-hidden {
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .overlay img {
+        width: 100%;
+    }
+}

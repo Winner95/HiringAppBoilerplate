@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Вакансии Badoo</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link href="./node_modules/mdbootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./node_modules/mdbootstrap/css/mdb.min.css" rel="stylesheet">
+    <link rel="manifest" href="https://s3.amazonaws.com/bronner-photo-upload-service/badoo-vacancies/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="msapplication-starturl" content="https://s3.amazonaws.com/bronner-photo-upload-service/badoo-vacancies/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar--primary scrolling-navbar fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.svg" height="30" alt="">
+            </a>
+                <span id="page-title" class="navbar-text white-text">Вакансии</span> 
+        </nav>
+    </header>
+
+    <main class="mt-5">
+        <div class="container">
+            <div class="row row--vacansies js-vacancies">
+            </div>
+            <div class="row row--vacansies justify-content-center js-vacancy">
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="page-footer footer--primary center-on-small-only">
+        <div class="footer-copyright wow fadeIn" data-wow-delay="0.2s">
+            <div class="container-fluid">
+                2017 © Badoo
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalWindow" tabindex="-1" role="dialog" aria-labelledby="modalWindowLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalWindowLabel">Заполнить заявку</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-progress">
+                    <div class="progress primary-color-dark">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                <!-- form -->
+                    <form class="js-form-mail-send">
+                        <div class="md-form mb-5">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="form1" class="form-control validate" required minlength="4">
+                            <label for="form1" data-error="Минимум 4 буквы" data-success="Готово!">Имя и фамилия</label>
+                        </div>
+                        
+                        <div class="md-form mb-5">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="email" id="form2" class="form-control validate" required>
+                            <label for="form2" data-error="Укажите действительный адрес почты" data-success="Готово!">E-mail</label>
+                        </div>
+    
+                        <div class="md-form mb-5">
+                            <i class="fa fa-mobile-phone prefix grey-text"></i>
+                            <input type="text" id="form3" class="form-control validate" required minlength="4">
+                            <label for="form3" data-error="Укажите номер телефона" data-success="Готово!">Телефон</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
+                    <button type="button" class="btn btn-primary" data-href="deliver">Отправить <i class="fa fa-paper-plane-o ml-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <script data-main="app/app.js" src="./node_modules/requirejs/require.js"></script>
+</body>
+</html>

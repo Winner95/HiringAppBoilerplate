@@ -1,0 +1,24 @@
+<div class="col-md-12 animated fadeIn">
+	<div class="card card-cascade wider reverse">
+		<div class="view overlay hm-white-slight">
+			<img src="{{image}}" class="img-fluid">
+			<a href="#!">
+				<div class="mask waves-effect waves-light"></div>
+			</a>
+		</div>
+		
+		<div class="card-body text-center">
+			<h4 class="card-title"><strong>{{position}}</strong></h4>
+			{{#items}}
+				<h5 class="title--primary"><strong>{{title}}</strong></h5>
+				<ul class="list-unstyled list--duties">
+					{{#list}}
+					<li><i class="fa fa-caret-right" aria-hidden="true"></i>{{point}}</li>
+					{{/list}}
+				</ul>
+			{{/items}}
+			<button class="btn btn--primary" data-href="home"><i class="fa fa-reply" aria-hidden="true"></i> Вернуться в меню</button>
+			<button class="btn btn--primary" data-toggle="modal" data-title="{{id}}"><i class="fa fa-magic mr-1"></i> Откликнуться на вакансию</button>			
+		</div>
+	</div>
+</div>

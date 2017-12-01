@@ -1,2 +1,30 @@
-# HiringAppBoilerplate
-A simple and modern designed FrontEnd boilerplate for Hiring App, which is hosted on Amazon WS. The app is builded with BackboneJS, RequireJS, MoustacheJS and MDBootstrap
+# Backbone Boilerplate for simple Hiring App
+
+In this app we show list of jobs and their descriptions. User can send request for one that liked.
+
+## Before start
+
+You will need to adjust boilerplate for yourself:
+
+**/manifest.json**
+
+  "start_url": url, - define url, where your FE instance will be hosted
+  "scope": url,
+
+**/index.html**
+
+    <link rel="manifest" href="url/manifest.json">
+    <meta name="msapplication-starturl" content="url/index.html">
+
+**/app/data/demo.json**
+
+    - data - change data if needed.
+
+**/app/collection.item-list.js**
+
+    - link to data
+
+**app/utilities/router.js**
+
+    - data manipulation scenarios
+    - route_deliver > $ajax.url -  backend url. Should lead to backend instance, which will handle post-request.

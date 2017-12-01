@@ -1,0 +1,30 @@
+{
+  "lang": "ru",
+  "start_url": "https://s3.amazonaws.com/bronner-photo-upload-service/badoo-vacancies/index.html",
+  "scope": "https://s3.amazonaws.com/bronner-photo-upload-service/badoo-vacancies/",
+  "background_color": "#7000e2",
+  "theme_color": "#7000e2",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "img/icons/AppIcon20x20@2x.png",
+      "sizes": "40x40",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/AppIcon20x20@3x.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/AppIcon40x40@2x~ipad.png",
+      "sizes": "80x80",
+      "type": "image/png"
+    },
+    {
+    "src": "img/icons/AppIcon76x76@2x~ipad.png",
+    "sizes": "80x80",
+    "type": "image/png"
+    }
+  ]
+}
