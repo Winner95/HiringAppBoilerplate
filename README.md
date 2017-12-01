@@ -35,8 +35,8 @@ You can edit and run this project locally:
 
     clone repository
 
-    **npm install**
+    npm install
 
-    **npm start**
+    npm start
 
 You can upload your code to AWS servers and run it remotely.
