@@ -3,20 +3,17 @@ var np = '../node_modules/';
 requirejs.config({
     baseUrl: 'app',
     shim: {
-        'wow': {
-            exports: 'WOW',
-        },
         'bootstrap': {
-           deps: ['jquery', 'plugins/popper'],
+           deps: ['plugins/popper', 'jquery'],
            exports: 'bootstrap',
         },
-        mdb : {
-            deps : [ 'jquery', 'bootstrap'],
-            exports: 'mdb'
-        },
-        helper : {
-            deps : [ 'mdb'],
+        'helper': {
+            deps : ['mdb'],
             exports: 'helper'
+        },
+        'mdb': {
+            deps : ['jquery', 'bootstrap'],
+            exports: 'mdb'
         },
     },
     paths: {
@@ -31,7 +28,7 @@ requirejs.config({
 });
 
 requirejs(['jquery', 'underscore', 'backbone', 'backboneTouch', 'localstorage', 'mustache',
-    'bootstrap', 'utilities/mainView',  'utilities/data', 
+    'bootstrap', 'utilities/mainView', 'utilities/data', 
     'collection.item-list', 'model.item', 'view.item-list', 'view.item'],
 function($, _, backbone, backboneTouch, localstorage, mustache,
     bootstrap, View, data,
