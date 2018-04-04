@@ -4,7 +4,7 @@ In this app we show list of jobs and their descriptions. User can send request f
 
 ## Before start
 
-** NPM version should be at least 5.8.0  **
+**NPM version should be at least 5.8.0**
 
 You will need to adjust boilerplate for yourself:
 
