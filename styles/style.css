@@ -76,6 +76,10 @@ footer.footer--primary {
     display: none !important;
 }
 
+/* customisation of lists */
+
+.list-unstyled i.fa { margin-right: 5px;}
+
 @media (min-width: 992px) {
     .overlay img {
         width: 100%;
