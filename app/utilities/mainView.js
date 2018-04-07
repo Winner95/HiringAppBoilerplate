@@ -7,9 +7,9 @@ function(Backbone, Router) {
             'tap [data-toggle="modal"]': 'openModal'
         },
         router: new Router(),
-        initialize: function() {            
+        initialize: function() {
             this.router.on('route', function(page) {
-                
+
                 $('html, body').animate({ scrollTop: 0 }, 200 );
 
             });

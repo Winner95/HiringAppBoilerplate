@@ -82,8 +82,9 @@ function(Backbone, appHelper, ItemList, ItemView) {
                 var Offer = {};
                 
                 Offer.name = $('#form1').val();
-                Offer.email = $('#form2').val();
-                Offer.phone = $('#form3').val();
+                Offer.currentOccupation = $('#form2').val();
+                Offer.email = $('#form3').val();
+                Offer.phone = $('#form4').val();
                 Offer.position = App.vacancies.get(App.position).attributes.position;
                 
                 if(!Offer.name) {
