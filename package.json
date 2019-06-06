@@ -27,10 +27,10 @@
     "tapjs": "^1.0.9"
   },
   "devDependencies": {
-    "mustache": "^2.3.0",
-    "requirejs": "^2.3.3",
+    "eslint": "5.16.0",
+    "eslint-config-google": "^0.9.1",
     "http-server": "^0.11.1",
-    "eslint": "^4.2.0",
-    "eslint-config-google": "^0.9.1"
+    "mustache": "2.3.0",
+    "requirejs": "2.3.3"
   }
 }
